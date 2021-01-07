@@ -9,8 +9,12 @@
   height: 100vh;
   background-color: aquamarine;
   display: flex;
+  justify-content: space-between;
 }
 
 .hotel {
   border: 1px solid black;
+  width: 20%;
+  height: 30%;
+  font-size: 20px;
 }

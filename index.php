@@ -14,19 +14,18 @@
 
 
 <div class="container">
-    <h1>
     <?php 
         foreach ($hotels as $infotype=>$hotel){?>
 
             <div class="hotel"><?php
-            echo 'Hotel name: ' . $hotel["name"] . ". "; 
-            echo 'Hotel description:' . $hotel["description"]  . ". ";
+            echo 'Hotel name: ' . $hotel["name"] . ". <br>"; 
+            echo 'Hotel description:' . $hotel["description"]  . ". <br>";
             if ($hotel["parking"]===true){
-                echo 'Hotel parking: yes'}
-                else {
-                    echo 'Hotel parking: no'
-                };          
-            echo 'Hotel rating:' . $hotel["vote"] . ". ";
+                echo 'Hotel parking: yes. <br>' ;
+            } else {
+                    echo 'Hotel parking: no. <br>';
+                };      
+            echo 'Hotel rating:' . $hotel["vote"] . ". <br>";
             echo 'Hotel distance:' . $hotel["distance_to_center"] . " km. ";
 
             ?></div><?php
@@ -34,7 +33,6 @@
 
 
     ?>
-    </h1>
 </div>
     
 </body>
