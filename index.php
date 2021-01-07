@@ -19,16 +19,19 @@
         foreach ($hotels as $infotype=>$hotel){?>
 
             <div class="hotel"><?php
-            echo 'hotel name: ' . $hotel["name"] . " ";
-            echo 'hotel description:' . $hotel["description"];
-            echo $hotel["parking"];
-            echo 'hotel rating:' . $hotel["vote"];
-            echo 'hotel distance:' . $hotel["distance_to_center"];
+            echo 'Hotel name: ' . $hotel["name"] . ". "; 
+            echo 'Hotel description:' . $hotel["description"]  . ". ";
+            if ($hotel["parking"]===true){
+                echo 'Hotel parking: yes'}
+                else {
+                    echo 'Hotel parking: no'
+                };          
+            echo 'Hotel rating:' . $hotel["vote"] . ". ";
+            echo 'Hotel distance:' . $hotel["distance_to_center"] . " km. ";
 
             ?></div><?php
         }
 
-            // echo $hotels;
 
     ?>
     </h1>
