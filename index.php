@@ -19,14 +19,14 @@
 
             <div class="hotel"><?php
             echo 'Hotel name: ' . $hotel["name"] . ". <br>"; 
-            echo 'Hotel description:' . $hotel["description"]  . ". <br>";
+            echo 'Hotel description: ' . $hotel["description"]  . ". <br>";
             if ($hotel["parking"]===true){
-                echo 'Hotel parking: yes. <br>' ;
+                echo 'Hotel parking: Yes. <br>' ;
             } else {
-                    echo 'Hotel parking: no. <br>';
+                    echo 'Hotel parking: No. <br>';
                 };      
-            echo 'Hotel rating:' . $hotel["vote"] . ". <br>";
-            echo 'Hotel distance:' . $hotel["distance_to_center"] . " km. ";
+            echo 'Hotel rating: ' . $hotel["vote"] . "/5. <br>";
+            echo 'Hotel distance: ' . $hotel["distance_to_center"] . " km. ";
 
             ?></div><?php
         }
